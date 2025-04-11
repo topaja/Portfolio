@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* light mode */
+  --color-light-primary: #5f56e2;
+  --color-light-background: #f7f7f7;
+  --color-light-text: #616161;
+
+  /* dark mode */
+  --color-dark-primary: #948eeb;
+  --color-dark-background: #0d1b1e;
+  --color-dark-text: #a0a0a0;
+  --color-dark-btnHover: #383838;
+
+  /* fonts */
+  --font-primary: "Ubuntu", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
+}
+
+body {
+  background-color: var(--color-light-background);
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-primary);
+  border-radius: 10px;
+}
+
+/* Scrollbar track background */
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-primary);
+}
+
