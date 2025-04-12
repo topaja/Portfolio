@@ -1,25 +1,51 @@
 import React from "react";
+import { circle } from "../assets/assets";
 
 const Experience = () => {
   return (
-    <section className="py-16 px-6 bg-gray-50">
-      <h2 className="text-2xl font-bold text-indigo-600 text-center">
+    <>
+      <div className="w-full h-10 bg-[#F2F1F7]"></div>
+      {/* heading */}
+      <p className="font-secondary text-light-primary font-bold text-[22px] mt-[-19px] sm:mx-[10%] px-8">
         Experience
-      </h2>
-      <div className="mt-8 max-w-3xl mx-auto">
-        <div className="border-l-4 border-indigo-600 pl-4">
-          <h3 className="text-lg font-semibold">
-            UX Designer & Developer Intern
-          </h3>
-          <p className="text-gray-600">Leadcoding - 2023</p>
-          <p className="mt-2 text-gray-600">
-            Developed user-centered interfaces, logos, and visuals for websites.
-            Collaborated with teams, contributing technical expertise in C++ and
-            GitHub to streamline development and improve design implementation.
-          </p>
+      </p>
+      <div className="px-2 md:px-8 py-15 sm:mx-[10%]">
+        <div className="mt-10 ml-12 flex gap-4 items-start relative ">
+          <img
+            src={circle}
+            alt="circle design"
+            className="rotate-90 absolute -left-25 top-[80px] sm:-left-35 md:-left-45 lg:-left-50 md:top-[60px] w-[90px]"
+          />
+          <div
+            className="bg-dark-primary text-white font-semibold px-5 py-2 w-fit text-center text-sm font-secondary mr-2"
+            style={{
+              clipPath:
+                "polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)",
+            }}
+          >
+            2023
+          </div>
+
+          <div className="flex flex-col mt-1">
+            <div className="w-5 h-5 rounded-full bg-light-primary shadow-[0_0px_20px_rgba(0,0,0,1)] shadow-light-primary"></div>
+            <div className="w-[2px] h-[130px] bg-light-primary mx-auto rounded"></div>
+          </div>
+
+          <div>
+            <p className="font-primary text-bold text-lg">
+              UX Designer & Developer Intern
+            </p>
+            <p className="text-base">Leadcoding</p>
+            <p className="mt-5 text-light-text w-[70%] text-left text-sm">
+              Developed user-centered interfaces, logos, and visuals for
+              websites Collaborated with teams, contributing technical expertise
+              in C++ and GitHub to streamline development and improve design
+              implementation
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

@@ -5,10 +5,11 @@ import { projectData } from "../data/project";
 import ProjectCard from "./ProjectCard";
 import { designData } from "../data/design";
 
-const Proj = () => {
+const Project = () => {
   const [selected, setSelected] = useState("development");
   return (
     <>
+      <div className="bg-[#F2F1F7] w-full">
       <div className="px-8 py-6 sm:mx-[4%]">
         {/* heading */}
         <div className="flex items-center justify-center w-full gap-6 mb-10">
@@ -45,7 +46,7 @@ const Proj = () => {
           </p>
         </div>
 
-        <div className="flex gap-6 w-full flex-wrap mt-15">
+        <div className="flex gap-6 w-full flex-wrap mt-15 justify-center items-center">
           {selected === "design"
             ? designData.map((data, key) => {
                 return <ProjectCard data={data} key={key} />;
@@ -55,8 +56,9 @@ const Proj = () => {
               })}
         </div>
       </div>
-    </>
+      </div>
+      </>
   );
 };
 
-export default Proj;
+export default Project;

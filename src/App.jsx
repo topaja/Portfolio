@@ -10,16 +10,19 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="font-sans text-gray-800">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Project/>
-      {/* <Experience /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-    </div>
+    <>
+      {/* <div className="bg-[#F2F1F7] absolute top-0 h-[2253px] w-full -z-0"></div> */}
+      <main className="relative z-10">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Project />
+        <Experience />
+        <Contact />
+        {/* <Footer /> */}
+      </main>
+    </>
   );
 };
 

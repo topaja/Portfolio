@@ -8,7 +8,7 @@ const Navbar = () => {
   const [closeMenu, setCloseMenu] = useState(false);
   return (
     <>
-      <div className="flex justify-between items-center w-full p-8">
+      <div className="flex justify-between items-center w-full p-8 bg-[#F2F1F7]">
         <div className="absolute z-10">
           <img src={logo} alt="logo" className="w-[60px] p-3" />
         </div>

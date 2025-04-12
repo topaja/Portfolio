@@ -11,6 +11,7 @@ import redux from "./redux.png";
 import git from "./git.png";
 import github from "./github.png";
 import circle from "./circle.png";
+import contact from './contact.png'
 
 // for navbar
 export { logo };
@@ -33,3 +34,4 @@ export const skillsImg = {
 };
 
 export { circle };
+export { contact };

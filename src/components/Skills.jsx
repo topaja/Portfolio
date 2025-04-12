@@ -8,6 +8,7 @@ const skills = [
   "javascript",
   "react",
   "tailwind",
+  "bootstrap",
   "redux",
   "git",
   "github",
@@ -17,7 +18,7 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <div className="py-10 relative">
+      <div className="py-10 relative bg-[#F2F1F7]">
         <img
           src={circle}
           alt="circle design"

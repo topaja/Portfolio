@@ -29,13 +29,13 @@ const ProjectCard = ({ data }) => {
               );
             })}
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center">
             <a href={code} target="_blank">
               <button
                 className={
                   area === "design"
                     ? "hidden"
-                    : "flex justify-center items-center px-4 py-1 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300"
+                    : "flex justify-center items-center px-4 py-2 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300"
                 }
               >
                 <FontAwesomeIcon icon={faCode} />

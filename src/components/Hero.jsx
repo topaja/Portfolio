@@ -7,7 +7,7 @@ import { hero } from "../assets/assets";
 const Hero = () => {
   return (
     <>
-      <div className="px-8 relative">
+      <div className="px-8 relative bg-[#F2F1F7]">
         {/* side links */}
         <div className="absolute flex flex-col item-center justify-center gap-4 top-40 left-10">
           <FontAwesomeIcon
