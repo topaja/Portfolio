@@ -1,5 +1,8 @@
 import React from "react";
 import { contact } from "../assets/assets";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -16,6 +19,11 @@ const Contact = () => {
             </p>
             <div className="w-20 sm:w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
           </div>
+        </div>
+        <div className="flex gap-8 text-light-text text-[23px] justify-center items-center mt-5">
+          <FontAwesomeIcon icon={faLinkedin}/>
+          <FontAwesomeIcon icon={faEnvelope}/>
+          <FontAwesomeIcon icon={faGithub}/>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center mt-10">
           <div className="w-full md:w-1/2 flex justify-center">
