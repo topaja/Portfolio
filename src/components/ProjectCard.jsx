@@ -7,7 +7,7 @@ const ProjectCard = ({ data }) => {
   const { title, tag, image, area, code, preview } = data;
   return (
     <>
-      <div className="w-[350px] h-96 shadow-sm hover:shadow-xl rounded-lg bg-white">
+      <div className="w-[350px] h-96 shadow-sm hover:shadow-xl rounded-lg bg-white hover:scale-105 transition duration-300">
         <div className="h-1/2 relative">
           <img
             src={image}

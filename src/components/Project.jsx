@@ -10,54 +10,54 @@ const Project = () => {
   return (
     <>
       <div className="bg-[#F2F1F7] w-full">
-      <div className="px-8 py-6 sm:mx-[4%]">
-        {/* heading */}
-        <div className="flex items-center justify-center w-full gap-6 mb-10">
-          <div className="w-30 bg-light-primary h-1 mt-2 rounded"></div>
-          <p className="text-light-primary font-secondary font-bold text-[22px] w-fit">
-            Projects
-          </p>
-          <div className="w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
-        </div>
+        <div className="px-8 py-6 sm:mx-[4%]">
+          {/* heading */}
+          <div className="flex items-center justify-center w-full gap-6 mb-10">
+            <div className="w-30 bg-light-primary h-1 mt-2 rounded"></div>
+            <p className="text-light-primary font-secondary font-bold text-[22px] w-fit">
+              Projects
+            </p>
+            <div className="w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
+          </div>
 
-        {/* option */}
-        <div className="flex justify-center items-center gap-8 text-light-text font-secondary text-base">
-          <p
-            className={`${
-              selected === "development"
-                ? "bg-light-primary text-white"
-                : "bg-transparent"
-            } w-fit px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
-            onClick={() => setSelected("development")}
-          >
-            <FontAwesomeIcon icon={faCode} className="mr-2" />
-            Development
-          </p>
-          <p
-            className={`${
-              selected === "design"
-                ? "bg-light-primary text-white"
-                : "bg-transparent"
-            } w-fit  px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
-            onClick={() => setSelected("design")}
-          >
-            <FontAwesomeIcon icon={faPenNib} className="mr-2" />
-            Design
-          </p>
-        </div>
+          {/* option */}
+          <div className="flex justify-center items-center gap-8 text-light-text font-secondary text-base">
+            <p
+              className={`${
+                selected === "development"
+                  ? "bg-light-primary text-white"
+                  : "bg-transparent"
+              } w-fit px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
+              onClick={() => setSelected("development")}
+            >
+              <FontAwesomeIcon icon={faCode} className="mr-2" />
+              Development
+            </p>
+            <p
+              className={`${
+                selected === "design"
+                  ? "bg-light-primary text-white"
+                  : "bg-transparent"
+              } w-fit  px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
+              onClick={() => setSelected("design")}
+            >
+              <FontAwesomeIcon icon={faPenNib} className="mr-2" />
+              Design
+            </p>
+          </div>
 
-        <div className="flex gap-6 w-full flex-wrap mt-15 justify-center items-center">
-          {selected === "design"
-            ? designData.map((data, key) => {
-                return <ProjectCard data={data} key={key} />;
-              })
-            : projectData.map((data, key) => {
-                return <ProjectCard data={data} key={key} />;
-              })}
+          <div className="flex gap-6 w-full flex-wrap mt-15 justify-center items-center">
+            {selected === "design"
+              ? designData.map((data, key) => {
+                  return <ProjectCard data={data} key={key} />;
+                })
+              : projectData.map((data, key) => {
+                  return <ProjectCard data={data} key={key} />;
+                })}
+          </div>
         </div>
       </div>
-      </div>
-      </>
+    </>
   );
 };
 

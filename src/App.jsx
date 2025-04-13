@@ -7,11 +7,13 @@ import Project from "./components/Project";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   return (
     <>
-      {/* <div className="bg-[#F2F1F7] absolute top-0 h-[2253px] w-full -z-0"></div> */}
       <main className="relative z-10">
         <Navbar />
         <Hero />

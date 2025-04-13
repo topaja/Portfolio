@@ -22,7 +22,7 @@ const Skills = () => {
         <img
           src={circle}
           alt="circle design"
-          className="absolute right-10 md:right-20 top-[-50px] w-[100px]"
+          className="absolute right-5 md:right-20 top-[-50px] w-[100px]"
         />
         <div className="flex items-center justify-center w-full gap-6">
           <div className="w-30 bg-light-primary h-1 mt-2 rounded"></div>

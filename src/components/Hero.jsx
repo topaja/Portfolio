@@ -9,19 +9,25 @@ const Hero = () => {
     <>
       <div className="px-8 relative bg-[#F2F1F7]">
         {/* side links */}
-        <div className="absolute flex flex-col item-center justify-center gap-4 top-40 left-10">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-light-primary fa-lg"
-          />
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="text-light-primary text-[17px]"
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="text-light-primary fa-lg"
-          />
+        <div className="fixed flex flex-col item-center justify-center gap-4 top-50 left-10 z-20">
+          <a href="https://www.linkedin.com/in/topajas/" target="_blank">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-light-primary fa-lg hover:scale-120 transition-transform duration-300 hover:text-black"
+            />
+          </a>
+          <a href="mailto:topaja.daily08@gmail.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="text-light-primary text-[17px] hover:scale-120 transition-transform duration-300 hover:text-black"
+            />
+          </a>
+          <a href="https://github.com/topaja" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-light-primary fa-lg hover:scale-120 transition-transform duration-300 hover:text-black"
+            />
+          </a>
           <div className="w-[2px] h-[120px] bg-light-primary mx-auto rounded"></div>
         </div>
 

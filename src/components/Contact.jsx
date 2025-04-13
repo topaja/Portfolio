@@ -21,9 +21,24 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex gap-8 text-light-text text-[23px] justify-center items-center mt-5">
-          <FontAwesomeIcon icon={faLinkedin}/>
-          <FontAwesomeIcon icon={faEnvelope}/>
-          <FontAwesomeIcon icon={faGithub}/>
+          <a href="https://www.linkedin.com/in/topajas/" target="_blank">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="hover:scale-140 transition-transform duration-300 hover:text-light-primary"
+            />
+          </a>
+          <a href="mailto:topaja.daily08@gmail.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="hover:scale-140 transition-transform duration-300 hover:text-black"
+            />
+          </a>
+          <a href="https://github.com/topaja" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="hover:scale-140 transition-transform duration-300 hover:text-black"
+            />
+          </a>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center mt-10">
           <div className="w-full md:w-1/2 flex justify-center">
