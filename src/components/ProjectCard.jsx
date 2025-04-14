@@ -35,14 +35,14 @@ const ProjectCard = ({ data }) => {
                 className={
                   area === "design"
                     ? "hidden"
-                    : "flex justify-center items-center px-4 py-2 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300"
+                    : "cursor-pointer flex justify-center items-center px-4 py-2 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300"
                 }
               >
                 <FontAwesomeIcon icon={faCode} />
               </button>
             </a>
             <a href={preview} target="_blank">
-              <button className="px-4 py-1 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300">
+              <button className="cursor-pointer px-4 py-1 text-sm rounded-full border-light-primary border-1 text-light-primary hover:bg-[#CFCFCF] hover:border-[#CFCFCF] ease-in-out duration-300">
                 <FontAwesomeIcon icon={faEye} />
               </button>
             </a>

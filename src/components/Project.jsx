@@ -27,7 +27,7 @@ const Project = () => {
                 selected === "development"
                   ? "bg-light-primary text-white"
                   : "bg-transparent"
-              } w-fit px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
+              } cursor-pointer w-fit px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
               onClick={() => setSelected("development")}
             >
               <FontAwesomeIcon icon={faCode} className="mr-2" />
@@ -38,7 +38,7 @@ const Project = () => {
                 selected === "design"
                   ? "bg-light-primary text-white"
                   : "bg-transparent"
-              } w-fit px-4 py-2  rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
+              } cursor-pointer w-fit px-4 py-2  rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
               onClick={() => setSelected("design")}
             >
               <FontAwesomeIcon icon={faPenNib} className="mr-2" />

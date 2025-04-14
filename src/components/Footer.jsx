@@ -17,31 +17,31 @@ const Footer = () => {
           <ul className="text-light-text font-primary flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mt-4 text-lg">
             <li
               onClick={() => scrollToSection("about")}
-              className="hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
+              className="cursor-pointer hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
             >
               About
             </li>
             <li
               onClick={() => scrollToSection("skills")}
-              className="hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
+              className="cursor-pointer hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
             >
               Skills
             </li>
             <li
               onClick={() => scrollToSection("projects")}
-              className="hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
+              className="cursor-pointer hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
             >
               Projects
             </li>
             <li
               onClick={() => scrollToSection("experience")}
-              className="hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
+              className="cursor-pointer hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
             >
               Experience
             </li>
             <li
               onClick={() => scrollToSection("contact")}
-              className="py-1 sm:py-2 hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
+              className="cursor-pointer py-1 sm:py-2 hover:font-medium hover:text-light-primary delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out"
             >
               Contact
             </li>
