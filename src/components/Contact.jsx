@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { contact } from "../assets/assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const form = useRef();
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    emailjs
+      .sendForm(
+        "service_mvssm3q", // Service ID
+        "template_md3rbi9", // Template ID
+        form.current,
+        "owL_dpKspQSvmValM" // Public Key
+      )
+      .then(
+        (result) => {
+          setStatus("Message sent successfully!");
+          form.current.reset();
+          // Clear the success message after 3 seconds
+          setTimeout(() => {
+            setStatus("");
+          }, 3000);
+        },
+        (error) => {
+          setStatus("Failed to send message. Please try again.");
+          // Clear the error message after 3 seconds
+          setTimeout(() => {
+            setStatus("");
+          }, 3000);
+        }
+      );
+  };
+
   return (
     <>
       <div className="px-4 lg:px-8 py-15 md:mx-[10%] mx-[4%]">
@@ -20,7 +54,9 @@ const Contact = () => {
             <div className="w-20 sm:w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
           </div>
         </div>
-        <div className="flex gap-8 text-light-text text-[23px] justify-center items-center mt-5">
+
+        {/* social links */}
+        {/* <div className="flex gap-8 text-light-text text-[23px] justify-center items-center mt-5">
           <a href="https://www.linkedin.com/in/topajas/" target="_blank">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -39,29 +75,44 @@ const Contact = () => {
               className="hover:scale-140 transition-transform duration-300 hover:text-black"
             />
           </a>
-        </div>
+        </div> */}
+        
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-center mt-10">
           <div className="w-full md:w-1/2 flex justify-center">
             <img src={contact} alt="image" className="w-[75%] sm:w-[95%]" />
           </div>
-          <form className="w-full md:w-1/2 lg:w-2/5">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="w-full md:w-1/2 lg:w-2/5"
+          >
             <input
               type="text"
+              name="user_name"
               placeholder="Full Name"
+              required
               className="w-full p-2 border-gray-300 border-2 rounded-lg mb-6 text-md text-light-text pl-4 focus:border-dark-primary focus:outline-none"
             />
             <input
               type="email"
+              name="user_email"
               placeholder="Email Address"
+              required
               className="w-full p-2 border-gray-300 border-2 rounded-lg mb-6 text-md text-light-text pl-4 focus:border-dark-primary focus:outline-none"
             />
             <textarea
+              name="message"
               placeholder="Your Message"
+              required
               className="w-full px-2 pt-6 h-25 border-gray-300 border-2 rounded-lg mb-4 text-md text-light-text pl-4 focus:border-dark-primary focus:outline-none"
             ></textarea>
-            <button className="w-1/4 px-4 py-2 font-primary bg-light-primary text-white rounded-lg hover:bg-black ease-in-out duration-300 text-sm lg:text-md">
+            <button
+              type="submit"
+              className="w-1/4 px-4 py-2 font-primary bg-light-primary text-white rounded-lg hover:bg-black ease-in-out duration-300 text-sm lg:text-md"
+            >
               Submit
             </button>
+            {status && <p className="mt-4 text-sm text-center">{status}</p>}
           </form>
         </div>
       </div>

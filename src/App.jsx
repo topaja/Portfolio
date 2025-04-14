@@ -17,11 +17,21 @@ const App = () => {
       <main className="relative z-10">
         <Navbar />
         <Hero />
-        <About />
-        <Skills />
-        <Project />
-        <Experience />
-        <Contact />
+        <div id="about">
+          <About />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="projects">
+          <Project />
+        </div>
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </main>
     </>

@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { hero } from "../assets/assets";
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="px-8 relative bg-[#F2F1F7]">
@@ -42,7 +47,10 @@ const Hero = () => {
             <p className="font-primary pl-2 text-[#212121]">
               FrontEnd Developer
             </p>
-            <button className="mt-10 text-start w-fit px-10 py-3 rounded-lg border-light-primary border-2 text-light-primary font-semibold text-md">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="cursor-pointer hover:bg-black hover:text-white hover:border-black ease-in-out duration-300 mt-10 text-start w-fit px-10 py-3 rounded-lg border-light-primary border-2 text-light-primary font-semibold text-md"
+            >
               Contact Me
             </button>
           </div>
