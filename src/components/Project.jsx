@@ -21,7 +21,7 @@ const Project = () => {
           </div>
 
           {/* option */}
-          <div className="flex justify-center items-center gap-8 text-light-text font-secondary text-base">
+          <div className="flex justify-center items-center gap-8 text-light-text font-secondary text-base max-[360px]:text-sm">
             <p
               className={`${
                 selected === "development"
@@ -38,7 +38,7 @@ const Project = () => {
                 selected === "design"
                   ? "bg-light-primary text-white"
                   : "bg-transparent"
-              } w-fit  px-4 py-2 rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
+              } w-fit px-4 py-2  rounded hover:bg-dark-background ease-in-out duration-300 hover:text-white shadow-md`}
               onClick={() => setSelected("design")}
             >
               <FontAwesomeIcon icon={faPenNib} className="mr-2" />
