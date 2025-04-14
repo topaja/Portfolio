@@ -14,7 +14,7 @@ const Hero = () => {
     <>
       <div className="px-8 relative bg-[#F2F1F7]">
         {/* side links */}
-        <div className="fixed flex flex-col item-center justify-center gap-4 top-50 left-10 z-20">
+        <div className="left-5 absolute sm:fixed flex flex-col item-center justify-center gap-4 top-25 sm:top-50 sm:left-10 z-20">
           <a href="https://www.linkedin.com/in/topajas/" target="_blank">
             <FontAwesomeIcon
               icon={faLinkedin}
