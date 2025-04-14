@@ -45,11 +45,11 @@ const Contact = () => {
             Get in Touch
           </p>
           <div className="flex items-center justify-center w-full gap-6">
-            <div className="w-20 sm:w-30 bg-light-primary h-1 mt-2 rounded"></div>
+            <div className="max-[420px]:w-10 w-20 sm:w-30 bg-light-primary h-1 mt-2 rounded"></div>
             <p className="text-light-primary font-secondary font-bold text-[18px] sm:text-[22px] w-fit">
               Contact Me
             </p>
-            <div className="w-20 sm:w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
+            <div className="max-[420px]:w-10 w-20 sm:w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
           </div>
         </div>
 

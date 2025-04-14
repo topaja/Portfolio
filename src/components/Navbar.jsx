@@ -16,19 +16,25 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center w-full p-8 bg-[#F2F1F7]">
-        <div className="absolute z-10">
+        <div
+          className={` ${
+            closeMenu ? "fixed" : "absolute"
+          } absolute z-[60]`}
+        >
           <a href="https://topaja.github.io/Portfolio/">
             <img
               src={logo}
               alt="logo"
-              className="w-[60px] p-3 cursor-pointer"
+              className="w-[55px] md:w-[60px] mt-6 sm:mt-0 p-3 cursor-pointer"
             />
           </a>
         </div>
-        {/* Remove hidden from parent div and handle visibility in children */}
         <div className="relative w-[100%]">
-          {/* Show menu icon only on mobile */}
-          <div className="sm:hidden flex justify-end">
+          <div
+            className={`${
+              closeMenu ? "fixed right-8" : "right-0"
+            } sm:hidden absolute sm:right-0 z-[60]`}
+          >
             {closeMenu ? (
               <FontAwesomeIcon
                 icon={faXmark}
@@ -43,11 +49,10 @@ const Navbar = () => {
               />
             )}
           </div>
-          {/* Show menu items on desktop or when menu is open */}
           <ul
             className={`${
               closeMenu ? "block" : "hidden"
-            } z-10 text-light-text font-primary sm:flex sm:space-x-8 absolute sm:relative right-0 top-10 sm:top-0 bg-white sm:bg-transparent p-4 sm:p-0 shadow-md sm:shadow-none sm:justify-center sm:item-center w-[200px] sm:w-full text-center`}
+            } z-50 text-light-text font-primary sm:flex sm:space-x-8 fixed sm:relative left-0 top-0 sm:top-0 bg-[#F2F1F7]/95 sm:bg-transparent h-screen sm:h-auto w-full sm:w-full text-center flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0`}
           >
             <li
               onClick={() => scrollToSection("about")}

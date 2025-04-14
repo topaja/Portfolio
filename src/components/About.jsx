@@ -9,7 +9,7 @@ const About = () => {
             About
           </p>
           <div className="flex items-start mt-4">
-            <div className="w-80 lg:w-55 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
+            <div className="max-[450px]:w-full w-80 lg:w-55 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
             <p className="text-light-text font-primary text-base">
               Hello! I'm Topaja Saha, a 2024 Computer Science Engineering
               graduate with a strong foundation in front-end development. I've

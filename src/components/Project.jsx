@@ -13,11 +13,11 @@ const Project = () => {
         <div className="px-8 py-6 sm:mx-[4%]">
           {/* heading */}
           <div className="flex items-center justify-center w-full gap-6 mb-10">
-            <div className="w-30 bg-light-primary h-1 mt-2 rounded"></div>
+            <div className="max-[420px]:w-10 w-20 sm:w-30 bg-light-primary h-1 mt-2 rounded"></div>
             <p className="text-light-primary font-secondary font-bold text-[22px] w-fit">
               Projects
             </p>
-            <div className="w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
+            <div className="max-[420px]:w-10 w-20 sm:w-30 bg-light-primary h-1 mr-3 mt-2 rounded"></div>
           </div>
 
           {/* option */}
