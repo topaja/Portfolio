@@ -7,17 +7,23 @@ import { logo } from "../assets/assets";
 const Navbar = () => {
   const [closeMenu, setCloseMenu] = useState(false);
 
-   const scrollToSection = (sectionId) => {
-     setCloseMenu(false);
-     const element = document.getElementById(sectionId);
-     element?.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionId) => {
+    setCloseMenu(false);
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   return (
     <>
       <div className="flex justify-between items-center w-full p-8 bg-[#F2F1F7]">
         <div className="absolute z-10">
-          <img src={logo} alt="logo" className="w-[60px] p-3" />
+          <a href="https://topaja.github.io/Portfolio/">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[60px] p-3 cursor-pointer"
+            />
+          </a>
         </div>
         {/* Remove hidden from parent div and handle visibility in children */}
         <div className="relative w-[100%]">
