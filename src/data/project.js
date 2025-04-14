@@ -1,8 +1,10 @@
+import { projectImg } from "../assets/assets";
+
 export const projectData = [
   {
     title: "ShopNow - Online Shopping Site",
     tag: ["React", "Tailwind CSS", "Redux"],
-    image: "src/assets/proj1.png",
+    image: projectImg.proj1,
     area: "dev",
     code: "https://github.com/topaja/ShopNow",
     preview: "https://topaja.github.io/ShopNow/",
@@ -10,7 +12,7 @@ export const projectData = [
   {
     title: "Eduford - University Landing Page",
     tag: ["HTML", "CSS", "JavaScript"],
-    image: "src/assets/proj2.png",
+    image: projectImg.proj2,
     area: "dev",
     code: "https://github.com/topaja/Eduford",
     preview: "https://topaja.github.io/Eduford/",
@@ -18,7 +20,7 @@ export const projectData = [
   {
     title: "Surravista - Pest Control Services",
     tag: ["HTML", "CSS", "JavaScript"],
-    image: "src/assets/proj3.png",
+    image: projectImg.proj3,
     area: "dev",
     code: "https://github.com/topaja/Surravista",
     preview: "https://topaja.github.io/Surravista/",
@@ -26,7 +28,7 @@ export const projectData = [
   {
     title: "Chyromed",
     tag: ["HTML", "CSS", "JavaScript"],
-    image: "src/assets/proj4.png",
+    image: projectImg.proj4,
     area: "dev",
     code: "https://github.com/topaja/Chyromed",
     preview: "https://topaja.github.io/Chyromed/",
@@ -34,7 +36,7 @@ export const projectData = [
   {
     title: "Social Links Card",
     tag: ["HTML", "CSS"],
-    image: "src/assets/proj5.png",
+    image: projectImg.proj5,
     area: "dev",
     code: "https://github.com/topaja/social-links-profile",
     preview: "https://topaja.github.io/social-links-profile/",

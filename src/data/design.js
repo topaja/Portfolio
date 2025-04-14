@@ -1,8 +1,10 @@
+import { designImg } from "../assets/assets";
+
 export const designData = [
   {
     title: "Covid-19 Awareness",
     tag: ["Figma"],
-    image: "src/assets/design1.png",
+    image: designImg.design1,
     area: "design",
     code: false,
     preview:
@@ -11,7 +13,7 @@ export const designData = [
   {
     title: "Creativee",
     tag: ["Figma"],
-    image: "src/assets/design2.png",
+    image: designImg.design2,
     area: "design",
     code: false,
     preview:

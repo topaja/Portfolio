@@ -13,6 +13,23 @@ import github from "./github.png";
 import circle from "./circle.png";
 import contact from './contact.png'
 
+import proj1 from './proj1.png'
+import proj2 from './proj2.png'
+import proj3 from './proj3.png'
+import proj4 from './proj4.png'
+import proj5 from './proj5.png'
+
+import design1 from './design1.png'
+import design2 from './design2.png'
+
+export const projectImg = {
+  proj1, proj2, proj3, proj4, proj5
+}
+
+export const designImg = {
+  design1, design2
+}
+
 // for navbar
 export { logo };
 
