@@ -19,4 +19,13 @@ export const designData = [
     preview:
       "https://www.figma.com/proto/3f6kTtm1fz1HJFlB2iexiJ/Designs.?node-id=2-62&t=HTcd3R9Av7KErbeM-1",
   },
+  {
+    title: "Personal Portfolio",
+    tag: ["Figma"],
+    image: designImg.proj6,
+    area: "dev",
+    code: "https://github.com/topaja/Portfolio",
+    preview:
+      "https://www.figma.com/proto/aqQFL3IIrpmVMtWrDMywBc/Untitled?node-id=140-332&t=AdtvxfRNrfZocqVh-1",
+  },
 ];

@@ -28,7 +28,7 @@ export const projectImg = {
 }
 
 export const designImg = {
-  design1, design2
+  design1, design2, proj6
 }
 
 // for navbar

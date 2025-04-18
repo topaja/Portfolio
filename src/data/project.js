@@ -42,7 +42,7 @@ export const projectData = [
     preview: "https://topaja.github.io/social-links-profile/",
   },
   {
-    title: "Portfolio - Topaja Saha",
+    title: "Personal Portfolio",
     tag: ["React", "Tailwind CSS"],
     image: projectImg.proj6,
     area: "dev",
