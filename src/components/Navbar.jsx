@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { logo } from "../assets/assets";
 
@@ -16,11 +16,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center w-full p-8 bg-[#F2F1F7]">
-        <div
-          className={` ${
-            closeMenu ? "fixed" : "absolute"
-          } absolute z-[60]`}
-        >
+        <div className={` ${closeMenu ? "fixed" : "absolute"} absolute z-[60]`}>
           <a href="https://topaja.github.io/Portfolio/">
             <img
               src={logo}
@@ -43,7 +39,7 @@ const Navbar = () => {
               />
             ) : (
               <FontAwesomeIcon
-                icon={faEllipsisVertical}
+                icon={faBars}
                 onClick={() => setCloseMenu(!closeMenu)}
                 className="text-2xl cursor-pointer"
               />
