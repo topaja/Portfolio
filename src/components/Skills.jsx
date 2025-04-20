@@ -6,12 +6,13 @@ const skills = [
   "html",
   "css",
   "javascript",
-  "react",
+  "React JS",
   "tailwind",
   "bootstrap",
   "redux",
   "git",
   "github",
+  "c++",
   "figma",
 ];
 

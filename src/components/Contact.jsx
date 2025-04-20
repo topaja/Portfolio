@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="px-4 lg:px-8 py-15 md:mx-[10%] mx-[4%]">
+      <div className="px-4 lg:px-8 py-16 md:mx-[10%] mx-[4%]">
         <div className="flex flex-col items-center">
           <p className="font-primary text-xs sm:text-sm text-light-text pr-4">
             Get in Touch

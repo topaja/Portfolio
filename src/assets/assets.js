@@ -10,6 +10,7 @@ import figma from "./figma.png";
 import redux from "./redux.png";
 import git from "./git.png";
 import github from "./github.png";
+import cpp from "./cpp.png";
 import circle from "./circle.png";
 import contact from './contact.png'
 
@@ -48,7 +49,8 @@ export const skillsImg = {
   bootstrap,
   git,
   github,
-  react,
+  "React JS":react,
+  "c++":cpp
 };
 
 export { circle };
