@@ -8,7 +8,6 @@ const skills = [
   "javascript",
   "React JS",
   "tailwind",
-  "bootstrap",
   "redux",
   "git",
   "github",

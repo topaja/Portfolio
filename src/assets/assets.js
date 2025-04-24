@@ -5,7 +5,6 @@ import css from "./css.png";
 import javascript from "./js.png";
 import react from "./react.png";
 import tailwind from "./tailwind.png";
-import bootstrap from "./bootstrap.png";
 import figma from "./figma.png";
 import redux from "./redux.png";
 import git from "./git.png";
@@ -46,7 +45,6 @@ export const skillsImg = {
   figma,
   redux,
   tailwind,
-  bootstrap,
   git,
   github,
   "React JS":react,
